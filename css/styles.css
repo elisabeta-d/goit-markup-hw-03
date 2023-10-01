@@ -57,6 +57,9 @@ body {
     text-align: left;
     text-decoration: none;
 } 
+.nav-link-current {
+    text-decoration: none;
+}
 .nav-link-current:visited {
     color: var(--hover-color);
     font-family: Roboto;
@@ -96,10 +99,8 @@ li {
     letter-spacing: 0.03em;
 }
 
-.contacts {
+.contacts-header {
     display: inline-flex;
-    text-decoration: none;
-    color: var(--paragraph-color);
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
@@ -109,8 +110,13 @@ li {
     justify-content: space-between;
 }
 
-.contacts a:hover {
+.contacts:hover {
     color: var(--hover-color);
+    text-decoration: none;
+}
+.contacts {
+    color: var(--paragraph-color);
+    text-decoration: none;
 }
 
 /* Studio-section */
@@ -160,14 +166,13 @@ li {
     color: #FFFFFF;
     background-color: var(--hover-color);
     cursor: pointer;
-    height: 30px;
-    top: 440px;
-    left: 720px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 6%;
+    text-align: center;
+    padding: 10px; 19px; 10px; 20px;
 }
 .button-request:hover {
     background-color: var(--button-request-color);
@@ -200,7 +205,6 @@ li {
 }
 .about-us ul {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 30px;
 }
@@ -220,8 +224,8 @@ li {
 }
 .what-we-do ul {
     display: flex;
-    gap: 30px;
     justify-content: center;
+    gap: 30px;
 }
 
 .our-team {
@@ -233,8 +237,8 @@ li {
 }
 .our-team ul {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 30px;
+    justify-content: center;
 }
 .our-team h2 {
     color: var(--title-color);
@@ -402,26 +406,6 @@ li {
     padding-bottom: 60px;
 }
 
-.address {
-    color: #FFFFFF;
-    font-size: 14px;
-    line-height: 16.41px;
-    letter-spacing: 3%;
-    margin-left: 215px;
-}
-.contacts-footer {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    margin-left: 215px;
-
-}
-
 .logo1 {
     color: #2196F3;
     font-family: Raleway;
@@ -431,8 +415,8 @@ li {
     letter-spacing: 0.03em;
     text-align: left;
     margin-left: 215px;
-
 }
+
 .logo2 {
     color: #FFFFFF;
     font-family: Raleway;
@@ -442,4 +426,34 @@ li {
     letter-spacing: 0.03em;
     text-align: left;
 }
+.address {
+    font-family: Roboto;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    margin-left: 215px; 
+}
+.contacts-footer {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    margin-left: 215px;
+    gap: 12px;
+}
+.e-mail {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.phone-number {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
 
